@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#slider-2,
+#slider-3,
+#slider-4,
+#slider-5,
+#slider-6 {
+    display: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slide-block,
+.menu-block {
+    background: #94be8b;
+    position: relative;
+    border-radius: 10px;
+    width: 500px;
+    min-height: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: -10px 20px 14px -4px rgba(0, 0, 0, 0.37);
+    font-size: 16px;
+}
+.slide-block {
+    width:300px;
+    min-height:220px;
+}
+
+.menu-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-toolbar {
+    padding: 0px 16px;
+    width: 100%;
+    min-height: 35px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.slide-toolbar span {
+    margin-left: 10px;
+}
+
+.fz-16 {
+    font-size: 16px !important;
+}
+
+.slide-text {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-btn button {
+    width: 150px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: #B9B5B5;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.slide-checkboxs {
+    padding: 10px;
+}
+
+.radio_block {
+    margin-left: -150px;
+    margin-top: 10px;
+}
+
+.slide-checkbox-block {
+    margin-bottom: 10px;
+}
+
+.slide-checkbox-block label {
+    font-size: 14px;
+}
+
+.slide-text {
+    line-height: 2;
+}
+
+.tac {
+    text-align: center;
+}
+
+.next-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.next-btn button {
+    width: 100px;
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #B9B5B5;
+    color: black;
+    cursor: pointer;
+
+}
+
+.slide-radio-group {
+    padding: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.slide-content {
+    font-size: 16px;
+}
+
+.slide-content-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.radio-group-item label {
+    margin-left: 10px;
+}
+
+.watch-circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.slide-watch {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.watch-input {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.watch-input input {
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    border: transparent;
+    border-bottom: 1px solid black;
+    display: flex;
+    background: #94be8b;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.slide-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.watch-text {
+    color: black;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.later button,
+.now button {
+    margin-left: 10px;
+    width: 150px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: #B9B5B5;
+    cursor: pointer;
+}
+
+.slide-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-img img {
+    width: 100%;
+    background-size: cover;
+}
+
+.exercise {
+    font-size: 13px;
+}
+
+.imitation-title {
+    padding-top: 100px;
+}
+
+.menu-item {
+    padding: 8px 16px;
+    margin-bottom: 20px;
+}
+
+.menu-btn {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 2px solid #272424;
+    color: #272424;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+

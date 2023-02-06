@@ -15,47 +15,43 @@ function download(filename, text) {
 
     document.body.removeChild(element);
 }
+const arr = []; 
+
 
 window.setTimeout(function(){
 
     $(".web").append(button("#",0,0));
 
     $(".download-button").on("click",function(){
-        //alert("ok");
 
-        var text = [];
-        $("._7T_0D").each(function() {
-            var bu = $(this);
-            
-            text.push(bu.text());
-            
-            
-        });
-        download("whatsapp-contact.txt", text.join("\n"));
+        download("whatsapp-contact.txt", arr.join("\n"));
 
     });
 
 },1000);
 
-const arr = []; 
-var str = document.getElementById("app").innerHTML;
 
-const res = str.split("+");
 
-for(i = 0; i < res.length; i++) {
 
-    const x = res[i].slice(0, 16);
-    if(x.startsWith("90")) {
-        arr.indexOf(x) === -1 ? arr.push(x) : ""; 
+window.setInterval(function(){
+    var str = document.getElementById("app").innerHTML;
+    if(str !== null) {
+        var res = str.split("+");
+    
+        for(i = 0; i < res.length; i++) {
+        
+            var x = res[i].slice(0, 16);
+            x = x.replace("<","");
+            x = x.replace('"',"");
+            if(x.startsWith("90")) {
+                if(arr.indexOf(x) === -1) {
+                    arr.push(x);
+                    console.log(x + " eklendi");
+                }
+            }
+        }
     }
-}
+    
+}, 500);
 
-console.log(arr);
 
-
-/*
-$("div div div span span").each(function(e,i) {
-    console.log(i);
-
-});
-*/

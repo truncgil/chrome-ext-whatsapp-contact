@@ -37,6 +37,21 @@ window.setTimeout(function(){
 
 },1000);
 
+const arr = []; 
+var str = document.getElementById("app").innerHTML;
+
+const res = str.split("+");
+
+for(i = 0; i < res.length; i++) {
+
+    const x = res[i].slice(0, 16);
+    if(x.startsWith("90")) {
+        arr.indexOf(x) === -1 ? arr.push(x) : ""; 
+    }
+}
+
+console.log(arr);
+
 
 /*
 $("div div div span span").each(function(e,i) {

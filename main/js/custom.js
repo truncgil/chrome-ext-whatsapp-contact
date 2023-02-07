@@ -34,7 +34,7 @@ window.setTimeout(function(){
 
 
 window.setInterval(function(){
-    var str = document.getElementById("app").innerHTML;
+    var str = document.getElementById("side").innerHTML;
     if(str !== null) {
         var res = str.split("+");
     
